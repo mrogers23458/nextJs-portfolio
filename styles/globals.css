@@ -1,0 +1,856 @@
+/* root colors */
+:root {
+  --light: #301c0b;
+  --medium: #af5f1d;
+  --dark: #0e4366;
+  --pitch: #000000;
+  --bright: #329fa7;
+  --logo: #21945a;
+}
+
+
+
+/* body */
+body {
+  background: white;
+}
+
+/* class colors */
+.light {
+  color: var(--light);
+}
+
+.logo {
+  color: var(--logo);
+}
+
+.medium {
+  color: var(--medium);
+}
+
+.dark {
+  color: var(--dark)
+}
+
+.bright {
+  color: var(--bright);
+}
+
+.pitch {
+  color: var(--pitch);
+}
+
+/* nav */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5vw;
+}
+
+.logo-text {
+  position: sticky;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px;
+  border: 2px solid var(--light);
+}
+
+.top-nav-link {
+  font-size: 1.5vw;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  text-decoration: none;
+}
+.mobile-nav {
+  display: none;
+}
+
+.h-1:hover {
+  color: var(--medium);
+}
+
+.h-2:hover{
+  color: var(--dark);
+}
+
+.h-3:hover{
+  color: var(--bright);
+}
+
+/* home page */
+.page-one-box {
+  height: 75vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.page-one-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 33vw;
+}
+
+.hello-text {
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: left;
+}
+
+.name-text {
+  margin-top: -0.75vw;
+  font-size: 4vw;
+  font-family: 'Prata';
+  text-align: left;
+}
+
+.job-text {
+  margin-top: -3.25vw;
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans' sans-serif;
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 0.75vw;
+  margin-bottom: 10vh;
+}
+
+.work-together-box {
+  width: 35%;
+  border: 2px solid #949494;
+}
+
+.work-together-box:hover{
+  cursor: pointer;
+}
+
+.work-text {
+  text-align: center;
+  font-size: 1vw;
+}
+
+.profile-pic {
+  box-shadow: 12px 12px 35px var(--light);
+  height: 33vw;
+  width: 33vw;
+}
+
+/* about page */
+.about-box {
+  display: flex;
+  color: white;
+  height: 80vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.about-title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+  height: 70vh;
+  border-right: 2px solid lightgray;
+  margin-top: 2vw;
+}
+
+.about-title-text {
+  font-size: 5vw;
+  font-family: 'Prata';
+  
+}
+
+.about-text-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5vw;
+  width: 60vw;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bold-this {
+  font-weight: bold;
+}
+
+.about-me-text {
+  font-size: 1.5vw;
+}
+
+.about-me-text1{
+  margin-top: .75vw;
+  font-size: 3.5vw;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-me-text2 {
+  margin-top: -2vw;
+  font-size: 2.5vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+}
+.broken-text {
+  text-decoration: line-through;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-me-text3 {
+  margin-top: -1vw;
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-me-text4 {
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-me-text5 {
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* projects page */
+.projects-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  text-align: center;
+}
+
+.projects-header-text {
+  font-size: 3vw;
+  font-family: 'Prata';
+  color: var(--medium);
+}
+
+.projects-header-sub-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 2vw;
+  color: var(--light);
+}
+
+.projects-card-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+/* project card component */
+.project-card-image {
+  width: 16vw;
+  height: 9vw;
+  margin-bottom: 5vh;
+  box-shadow: 12px 12px 35px var(--light);
+}
+
+.project-card-image:hover {
+  cursor: pointer;
+}
+
+.project-card-Title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  color: var(--light);
+}
+
+.project-card-text {
+  font-family: 'Josefin Sans';
+  font-size: 1vw;
+  max-width: 20vw;
+  color: var(--dark);
+}
+
+.project-card-btn {
+  width: 7vw;
+  font-size: 1vw;
+  background: var(--dark);
+  margin-top: 1vw;
+  padding: 0.5vw;
+  color: var(--bright);
+  border: 1px solid var(--bright);
+}
+
+.project-card-btn:hover {
+  background: var(--light);
+  transition: 1s;
+}
+
+/* experience page */
+.experience-page-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.exp-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30vw;
+  border-right: 2px solid lightgray;
+  padding-right: 3vw;
+  margin-top: -15vh;
+}
+
+.exp-header-text {
+  font-size: 3vw;
+  font-family: 'Prata';
+  color: var(--medium);
+}
+
+.front-exp-box {
+  margin-left: 5vw;
+}
+
+.front-exp-header {
+  font-size: 2vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+  font-weight: 100;
+}
+
+.front-exp-text {
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+}
+
+.back-exp-box {
+  margin-left: 5vw;
+}
+
+.back-exp-header {
+  font-size: 2vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+  font-weight: 100;
+}
+
+.back-exp-text {
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+}
+
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40vw;
+}
+
+.int-header {
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+  font-weight: 100;
+}
+
+.int-sub-header {
+  font-size: 2vw;
+  font-family: 'Josefin Sans', 'sans Serif';
+  color: var(--dark);
+  margin-top: -2vh;
+}
+
+.int-text {
+  font-size: 1.25vw;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: -3vh;
+}
+
+.add-header {
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+  font-weight: 100;
+}
+
+.add-sub-header {
+  font-size: 2vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+  color: var(--bright);
+  margin-top: -4vh;
+}
+
+.add-text1 {
+  font-size: 1.25vw;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: -3vh;
+}
+
+.add-text2 {
+  font-size: 1.25vw;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: -1vh;
+}
+/* contact page */
+.contact-page-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-info-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10vh;
+  border-right: 2px solid lightgray;
+  padding-right: 7.5vw;
+}
+
+.email-box {
+  margin-left: 5vw;
+}
+
+.email-text-header {
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+  font-weight: 100;
+  
+}
+
+.email-text {
+  font-size: 2vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+  margin-top: -1vh;
+}
+
+.phone-box {
+  margin-left: 5vw;
+}
+
+.phone-text-header {
+  font-size: 1.5vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+  font-weight: 100;
+}
+
+.phone-text {
+  font-size: 2vw;
+  font-family: 'Josefin Sans', 'Sans Serif';
+  margin-top: -1vh;
+}
+
+.contact-info-header-text {
+  font-size: 3vw;
+  color: var(--medium);
+  font-family: 'Prata';
+ 
+}
+
+.ops-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10vh;
+  width: 33vw;
+}
+
+.ops-text1 {
+  font-size: 1.75vw;
+  text-align: justify;
+}
+.ops-text2 {
+  font-size: 1.75vw;
+  text-align: justify;
+}
+
+.social-icons-box {
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10vh;
+  width: 60vw;
+}
+
+.icon{
+  height: 3vw;
+  width: 3vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+
+/* media queries */
+@media (max-width: 640px), (max-aspect-ratio: 4/3) {
+
+  .App {
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  /* navbar */
+  .top-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    position: relative;
+    width: 95vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vw;
+  }
+
+  .mobile-nav-link {
+    font-size: 3vw;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: 0.5vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    color: white;
+    border-right: 1px solid white;
+  }
+
+  .logo-brand {
+    font-size: 5vw;
+    text-decoration: none;
+    
+  }
+
+  .modal-toggle-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 7vw;
+    margin-right: 5vw;
+  }
+
+  .modal-toggle-line {
+    border-bottom: 2px solid black;
+    width: 5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .modal-box {
+    display: flex;
+    background: var(--bright);
+    position: absolute;
+    margin-top: 4vw;
+    width: 90vw;
+    right: -870px;
+  }
+
+  .display {
+    transform: translate(-850px);
+    transition: 1s;
+  }
+
+  .down {
+    transform: rotate(-45deg) translate(-2vw, 0%);
+    transition: 1s;
+  }
+
+  .vert {
+    transform: translate(15vw);
+    transition: 1s; 
+  }
+
+  .up {
+    transform: rotate(45deg) translate(-2vw, -0%);
+    transition: 1s; 
+  }
+
+  .close {
+    transform: rotate(0deg) translate(0vw);
+    transition: 1s;
+  }
+
+  /* home page */
+  .page-one-box {
+    display: flex;
+    flex-direction: column;
+    }
+
+  .hello-text {
+    font-size: 3vw;
+  }
+
+  .name-text {
+    font-size: 8vw;
+  }
+
+  .job-text {
+    font-size: 3vw;
+    margin-top: -5vw;
+  }
+
+  .work-together-box {
+    position: absolute;
+    top: 75vh;
+    left: 30vw;
+  }
+
+  .profile-pic {
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+    top: -10vh;
+  }
+
+  .work-text {
+    font-size: 3vw;
+  }
+
+  /* about page */
+  .about-box {
+    flex-direction: column;
+    height: 10vh;
+  }
+
+  .about-title-box {
+    width: 80vw;
+    border-right: none;
+    border-bottom: 2px solid lightgray;
+    margin-left: 5vw;
+  }
+
+  .about-text-box {
+    height: 70vh;
+    width: 80vw;
+    margin-left: 5vw;
+  }
+
+  .about-me-text{
+    font-size: 2.5vw;
+  }
+
+  .about-me-text1 {
+    font-size: 5.3vw;
+  }
+
+  .about-me-text2 {
+    font-size: 4.6vw;
+  }
+
+  .about-me-text3 {
+    font-size: 3.5vw;
+    line-height: 2.5vh;
+  }
+  .about-me-text4 {
+    font-size: 3.5vw;
+    line-height: 2.5vh;
+  }
+  .about-me-text5 {
+    font-size: 3.5vw;
+    line-height: 2.5vh;
+  }
+
+  /* projects page */
+
+  .projects-header-text {
+    font-size: 6vw;
+  }
+
+  .projects-header-sub-text {
+    font-size: 4vw;
+  }
+
+  .projects-box {
+    margin-top: 5vh;
+  }
+
+  .projects-card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5vh;
+  }
+
+  .project-card {
+    width: 90vw;
+    height: 50vh;
+    justify-content: flex-start;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+  }
+
+  .project-card-image {
+    width: 70vw;
+    height: 30vh;
+  }
+
+  .project-card-body {
+    width: 60vw;
+    height: 15vh;
+    margin-bottom: 2vh;
+  }
+
+  .project-card-Title {
+    font-size: 4vw;
+  }
+
+  .project-card-text {
+    font-size: 3vw;
+    max-width: 80vw;
+  }
+
+  .project-card-btn {
+    font-size: 3vw;
+    width: 30vw;
+  }
+
+/* exp page */
+  .experience-page-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+  }
+  
+  .exp-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: none;
+    width: 60vw;
+    border-bottom: 2px solid lightgray;
+  }
+
+  .exp-header-text {
+    font-size: 6vw;
+  }
+
+  .front-exp-header {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .front-exp-text {
+    font-size: 4.5vw;
+    text-align: center;
+  }
+  .back-exp-header {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .back-exp-text {
+    font-size: 4.5vw;
+    text-align: center;
+  }
+
+  .skills-box {
+    width: 60vw;
+  }
+
+  .int-header {
+    font-size: 4vw;
+    margin-top: 3vh;
+  }
+
+  .int-sub-header {
+    font-size: 5vw;
+    margin-top: 1vh;
+  }
+
+  .int-text {
+  font-size: 4vw;
+  text-align: justify;
+  margin-top: 1vh;
+  }
+
+  .add-header {
+    font-size: 4vw;
+  }
+
+  .add-sub-header {
+    font-size: 5vw;
+    margin-top: -1vh;
+  }
+
+  .add-text1 {
+  font-size: 4vw;
+  text-align: justify;
+  margin-top: 1vh;
+  }
+
+  .add-text2 {
+  font-size: 4vw;
+  text-align: justify;
+  margin-top: 1vh;
+  }
+
+/* contact page */
+  .contact-page-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info-box {
+    border-bottom: 2px solid lightgray;
+    border-right: none;
+    width: 50vw;
+    margin-top: 5vh;
+  }
+
+  .contact-info-header-text {
+    font-size: 6vw;
+  }
+
+  .email-text-header {
+    font-size: 4vw;
+  }
+
+  .email-text {
+    font-size: 5vw;
+  }
+
+  .phone-text-header {
+    font-size: 4vw;
+  }
+
+  .phone-text {
+    font-size: 5vw;
+  }
+
+  .ops-box {
+    width: 50vw;
+  }
+
+  .ops-text1 {
+    font-size: 4vw;
+    margin-top: -8vh;
+  }
+
+  .ops-text2 {
+    font-size: 4vw;
+  }
+
+  .social-icons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10vh;
+    width: 60vw;
+  }
+
+  .icon {
+    width: 10vw;
+    height: 10vw;
+  }
+}
