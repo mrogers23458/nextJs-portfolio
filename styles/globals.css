@@ -8,6 +8,10 @@
   --logo: #21945a;
 }
 
+.credits {
+  font-size: 10px;
+}
+
 
 
 /* body */
@@ -80,6 +84,12 @@ body {
 }
 
 /* home page */
+footer {
+  position: absolute;
+  right: 0;
+  top: 80vh;
+}
+
 .page-one-box {
   height: 75vh;
   padding-top: 5vh;
@@ -87,6 +97,7 @@ body {
   flex-direction: row-reverse;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
 
 .page-one-text-box {
@@ -497,8 +508,16 @@ body {
 @media (max-width: 640px), (max-aspect-ratio: 4/3) {
 
   .App {
+    position: relative;
     height: 100vh;
     overflow-x: hidden;
+  }
+
+  footer {
+    position: absolute;
+    top: 85vh;
+
+   
   }
   /* navbar */
   .top-nav {
@@ -586,6 +605,7 @@ body {
   .page-one-box {
     display: flex;
     flex-direction: column;
+    position: relative
     }
 
   .hello-text {
@@ -603,7 +623,7 @@ body {
 
   .work-together-box {
     position: absolute;
-    top: 90vh;
+    top: 80vh;
     left: 30vw;
   }
 
