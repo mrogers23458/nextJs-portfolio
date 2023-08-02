@@ -27,7 +27,7 @@ export default function Projects() {
     title: "Plan Simply",
     description:
       "This is a task organization app that Im building for my family. It is a Progressive Web Application that uses the MERN tech stack as well as ApolloClient, ApolloServer, and GraphQL.",
-    link: "https://mrogerscleanapp.herokuapp.com/",
+    link: "https://plan-simply-0a9e4110b7a5.herokuapp.com/",
   };
 
   return (
